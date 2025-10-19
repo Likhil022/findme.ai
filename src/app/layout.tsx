@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inter } from "next/font/google";
+import Navbar from "@/component/Navbar";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,6 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${geistMono.variable} antialiased`}>
+        <div className="fixed top-0 left-0 right-0 z-50">
+          <Navbar />
+        </div>
         {children}
       </body>
     </html>

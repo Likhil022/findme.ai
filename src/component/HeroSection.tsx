@@ -1,10 +1,11 @@
 import { Calendar, Camera } from "lucide-react";
+import findmeai from "../../public/findmeai.png";
 
 const HeroSection = () => {
   return (
     <div
       className="relative bg-gradient-to-r from-blue-50 to-indigo-50
- h-[500px] flex justify-center items-center"
+ h-[500px] flex justify-center items-center gap-10"
     >
       <div className="left max-w-2xl text-gray-700">
         <h3 className="text-3xl font-bold">
@@ -28,7 +29,9 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <div className="right"></div>
+      <div className="right shadow-xl shadow-black/55 rounded-2xl">
+        <img src={findmeai.src} alt="Find Me AI" className="h-90 rounded-2xl" />
+      </div>
     </div>
   );
 };

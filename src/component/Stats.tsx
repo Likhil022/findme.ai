@@ -1,7 +1,5 @@
 import React from "react";
-import { Image } from "lucide-react";
-import { Camera } from "lucide-react";
-import { Video } from "lucide-react";
+import { Image, Camera, Video } from "lucide-react";
 
 type StatsProps = {
   card_name: string;
